@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from './Header';
+import Header from './components/Header';
 import SolarSystem from './components/SolarSystem';
-// import PlanetCard from './components/PlanetCard';
-// import SolarSystem from './components/SolarSystem';
+import PlanetCard from './components/PlanetCard';
+import Imag from './images/Venus.png';
 
 class App extends React.Component {
   render() {
@@ -11,9 +11,10 @@ class App extends React.Component {
       <spam>
         <Header />
         <SolarSystem />
-        {/* <section data-testid="planet-name">
-          <PlanetCard />
-        </section> */}
+        <PlanetCard
+          planetName="Venus"
+          planetImage={ Imag }
+        />
       </spam>
     );
   }
