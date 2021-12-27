@@ -1,13 +1,13 @@
 import React from 'react';
 import Header from './components/Header';
-import Missions from './components/Missions';
 import SolarSystem from './components/SolarSystem';
-// import planets from './data/planets';
+import Missions from './components/Missions';
+import './App.css';
 
 class App extends React.Component {
   render() {
     return (
-      <div>
+      <div className="App">
         <Header />
         <SolarSystem />
         <Missions />
